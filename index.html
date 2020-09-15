@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+     
+    <style>
+        #name{
+            background-color: brown;
+
+            width: 50px;
+            height: 100px;
+        }
+        #headline{
+            background-color: purple;
+        }
+        #cs{
+            border: 10px solid purple;
+            text-align: center;
+            font-size:50px;
+            height: 200px; 
+            width: 1000px;
+            margin: 30px;
+            color: aqua;
+            background-color: blanchedalmond;
+        }
+
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="cs">
+        盒子模型
+        
+    </div>
+<p id="name">10班文件</p>
+
+<p>学校简介</p>
+<h1 id="headline">你好</h1>
+<h2>你好</h2>
+<h3>你好</h3>
+
+13rwerwer<br>
+<button id="js" type="submit">提交</button>
+<script>
+        var target =document.getElementById("js");
+
+        target.onclick =function(){
+            alert("你点击我了");//target.onclik ??
+        }
+        document.body.onmouseenter =function(){
+            alert("鼠标进来了");
+        }
+        document.body.onmouseenter =function(){
+            console.log("鼠标在移动");//console.log??
+        }
+        document.body.onmouseleave =function(){
+            console.log("鼠标离开了");
+        }
+        document.body.onkeydown=function(){
+            console.log("键盘被敲了");
+        }
+        document.body.onkeyup=function(){
+            console.log("键盘弹起来了");
+        }
+        
+        
+
+</script>
+    
+</body>
+</html>
+
