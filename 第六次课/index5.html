@@ -7,38 +7,41 @@
     <style>
         #box{
             background-color:red;
-            width: 60px;
+            width: 100px;
             position: absolute;
-            height: 80px;
+            height: 100px;
             left: 300px;
+            top: 200px;
         }
+        #box2{
+            background-color: blue;
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            left: 100px;
+            top: 400px;
 
+        }
     </style>
 </head>
 <body>  
      <div id="box">
-       
-   
-    <br>
-    <br>
-    <br>
-    <br>
 
-    <div>
-        <input type="button" id="btn" value="移动">
     </div>
-     </div> 
-     
-        
+    <div id="box2">
+
+    </div>
+         <br>
+         <br>
+        <input type="button" id="btn" value="移动">      
     <script>
             var target = document.getElementById("btn");
             target.onclick =function (){
                 var box= document.getElementById("box").style.left;
-                box =box.replace("px","")
+                box =box.replace("px","");
                 box =Number(box) +10;
                 document.getElementById("box").style.left =box +"px";
             }
     </script> 
- 
 </body>
 </html>

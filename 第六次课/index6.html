@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>三种样式</title>
+    <link rel="stylesheet" href="2.css">
+    <!-- 外部样式 -->
+    <style>
+        /* <!-- 内部样式 --> */
+
+        #wrapper{
+            background-color: burlywood;
+        }
+    </style>
+</head>
+<body>
+    <!-- css  行内样式 -->
+    <div id="wrapper" style="background-color: blueviolet;
+    width: 300px;
+    height:  40px;
+    border: 20px;">
+    
+    </div>
+    <div id="wrapper2" style="background-color: rgb(255, 255, 0,.4);
+    height: 40px;
+    width: 300px;
+    border: 20px;">
+
+    </div> 
+    <script>
+        var target=document.getElementById("wrapper")
+        target.style.backgroundColor
+    </script>
+    <br>
+    <!-- 三种样式 -->
+    <!-- console.log  -->
+    <!-- 在浏览器中    var target =docu.getele(id)  enter -->
+    <!-- alert -->
+    <!-- target.style.backgroundColor -->
+    <span style="width: 100px; font-size:60px;color: green;">
+
+        <strong class="money" style="font-size: 10px;">
+            8848
+        </strong>
+            8848.8奥利沙文
+    </span>
+    <!-- span strong -->
+    <br>
+    <br>
+    <textarea name="conten" id="5" cols="30" rows="10"></textarea>
+<!-- textarea -->
+<!-- select option -->
+<!-- input type -->
+    <br>
+    <select name="city" >
+        <option value="0">请选择</option>
+        <option value="sh">上海</option>
+        <option value="bj">北京</option>
+        <option value="sz">深圳</option>
+
+    </select>
+    <input type="file" name="photo"><br>
+    <input type="date" name="date"><br>
+    <br>
+
+    <input type="month" name="month"><br>
+        <br>
+    Password: <input type="password" name="pwd">
+    <input type="button" value="submit">
+
+    
+</body>
+</html>
