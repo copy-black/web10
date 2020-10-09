@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>波纹按钮</title>
+    <style>
+        .button{
+            position: relative;
+            display: inline-block;
+            padding: 15px 25px;
+            font-size: 24px;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+            outline: none;
+            background-color: seagreen;
+            -webkit-transition-duration: 0.4s;
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 9px #999;
+
+        }
+        .button:hover{
+            background-color:yellow;
+        }
+        .button:active{
+            background-color:orange;
+            box-shadow: 0 5px #666;
+            transform: translateY(4px);
+        }
+        .button::after{
+            content: "";
+            background: block;
+            position: absolute;
+            padding-top: 300%px;
+            padding-left: 350%px;
+            margin-left: -20px !important;
+            margin-top: -120%;
+            opacity: 0;
+            transition:all 0.8s;
+        }
+
+    </style>
+</head>
+<body>
+    <h2>奥里给</h2>
+    <input type="button">
+
+</body>
+</html>
