@@ -5,8 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        /* 块级元素  一行显示一个  可以设置宽和高 */
+        /* 行内元素  一行显示多个   不可以线程宽和高 */
+        /* 行内块级元素   可以设置宽和高   有表现出盒子的特性 */
         div{
-              display: inline;
+            width: 100px;
+            height: 100px;
+            background-color: crimson;
+        
+        }
+        span{
+            width: 100px;
+            height: 100px;
+            background-color: cyan ;
+            display: inline-block;
         }
       
     </style>
