@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>  
+        #father{
+            width: 200px;
+            height: 200px;
+            background-color:aqua;
+            margin:0 auto;
+            /* position: absolute; */
+            /* position: relative; */
+            margin-top: 10px;
+            /* margin-left: 10px; */
+            /* margin-left: 30px; */
+        } 
+        .son{
+            width: 50px;
+            height: 50px;
+            background-color: yellow;
+            /* position: relative; */
+            position: absolute;
+            /* 如果父元素没有position 则会脱离父元素 */
+            /*父：absulute   子 absulute  子会脱离父 */
+            top: 100px;
+            left: 100px;
+        }
+    </style>
+</head>
+    <body>
+        <div id="father">
+            <div class="son"></div>
+        <div>
+    </body>
+</html>
+

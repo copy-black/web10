@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link  id="mystyle" rel="stylesheet" href="./index16.css">
+</head>
+<body>
+    <div id="main">
+
+    </div>
+<br>
+<br>
+<br>
+<button id="mybutton">换肤</button>
+<p>点击这个按钮，来调用带参数的函数。</p>
+<button onclick="myFunction('Harry Potter','Wizard')">点击这里</button>
+<script>
+    var buttonTarget=window.document.getElementById("mybutton");
+    buttonTarget.onclick=function target(){
+            var linkTarget =document.getElementById("mystyle");
+            linkTarget.href="index16_.css";
+    }
+
+    function myFunction(name,job){
+    alert("Welcome " + name + ", the " + job);
+}
+
+ cars=["BMW","Volvo","Saa","Ford"];
+for (var i=0;i<cars.length;i++){
+	document.write(cars[i] + "<br>");
+}
+
+</script>
+
+
+</body>
+</html>
